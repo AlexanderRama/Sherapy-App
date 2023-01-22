@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_mobile"
+    app:startDestination="@id/homepageFragment">
+    <fragment
+        android:id="@+id/homepageFragment"
+        android:name="com.example.sherapy.fragments.HomepageFragment"
+        android:label="HomepageFragment"
+        tools:layout="@layout/fragment_homepage">
+        <action
+            android:id="@+id/action_homepageFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_homepageFragment_to_articleFragment"
+            app:destination="@id/articleFragment" />
+        <action
+            android:id="@+id/action_homepageFragment_to_notification"
+            app:destination="@id/notification" />
+        <action
+            android:id="@+id/action_homepageFragment_to_fragment1Fragment"
+            app:destination="@id/fragment1Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.sherapy.fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_homepageFragment"
+            app:destination="@id/homepageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/articleFragment"
+        android:name="com.example.sherapy.fragments.ArticleFragment"
+        android:label="ArticleFragment"
+        tools:layout="@layout/fragment_article">
+        <action
+            android:id="@+id/action_articleFragment_to_homepageFragment"
+            app:destination="@id/homepageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/konselingFragment"
+        android:name="com.example.sherapy.activities.KonselingActivity"
+        android:label="KonselingFragment"
+        tools:layout="@layout/activity_konseling">
+        <action
+            android:id="@+id/action_konselingFragment_to_konselDetailActivity"
+            app:destination="@id/konselDetailActivity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment1Fragment"
+        android:name="com.example.sherapy.activities.Fragment1Activity"
+        android:label="Fragment1Activity"
+        tools:layout="@layout/fragment1">
+        <action
+            android:id="@+id/action_fragment1Fragment_to_fragment2Activity"
+            app:destination="@id/fragment2Activity" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment2Activity"
+        android:name="com.example.sherapy.activities.Fragment2Activity"
+        android:label="Fragment2Activity"
+        tools:layout="@layout/fragment2">
+        <action
+            android:id="@+id/action_fragment2Activity_to_fragment3Activity"
+            app:destination="@id/fragment3Activity" />
+    </fragment>
+    <fragment
+        android:id="@+id/konselDetailActivity"
+        android:name="com.example.sherapy.activities.KonselDetailActivity"
+        android:label="KonselDetailActivity"
+        tools:layout="@layout/activity_konseldetail">
+        <action
+            android:id="@+id/action_konselDetailActivity_to_pembayaranActivity"
+            app:destination="@id/pembayaranActivity" />
+        <action
+            android:id="@+id/action_konselDetailActivity_to_konselingFragment"
+            app:destination="@id/konselingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pembayaranActivity"
+        android:name="com.example.sherapy.activities.PembayaranActivity"
+        android:label="PembayaranActivity"
+        tools:layout="@layout/activity_pembayaran">
+        <action
+            android:id="@+id/action_pembayaranActivity_to_bayarSuccessActivity"
+            app:destination="@id/bayarSuccessActivity" />
+        <action
+            android:id="@+id/action_pembayaranActivity_to_popupPembayaran"
+            app:destination="@id/popupPembayaran" />
+        <action
+            android:id="@+id/action_pembayaranActivity_to_konselDetailActivity"
+            app:destination="@id/konselDetailActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/bayarSuccessActivity"
+        android:name="com.example.sherapy.activities.BayarSuccessActivity"
+        android:label="BayarSuccessActivity"
+        tools:layout="@layout/activity_bayarsuccess">
+        <action
+            android:id="@+id/action_bayarSuccessActivity_to_homepageFragment"
+            app:destination="@id/homepageFragment" />
+        <action
+            android:id="@+id/action_bayarSuccessActivity_to_afterPembayaran"
+            app:destination="@id/afterPembayaran" />
+    </fragment>
+    <fragment
+        android:id="@+id/popupPembayaran"
+        android:name="com.example.sherapy.activities.PopupPembayaran"
+        android:label="PopupPembayaran"
+        tools:layout="@layout/popup_pembayaran">
+        <action
+            android:id="@+id/action_popupPembayaran_to_pembayaranActivity"
+            app:destination="@id/pembayaranActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment3Activity"
+        android:name="com.example.sherapy.activities.Fragment3Activity"
+        android:label="Fragment3Activity"
+        tools:layout="@layout/fragment3">
+        <action
+            android:id="@+id/action_fragment3Activity_to_fragment4Activity"
+            app:destination="@id/homepageFragment" />
+        <argument
+            android:name="correctAnswerCount"
+            app:argType="integer" />
+        <argument
+            android:name="questionListSize"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_fragment3Activity_to_homepageFragment"
+            app:destination="@id/homepageFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/moodFragment"
+        android:name="com.example.sherapy.activities.Fragment4Activity"
+        android:label="moodFragment"
+        tools:layout="@layout/fragment4">
+        <action
+            android:id="@+id/action_moodFragment_to_homepageFragment"
+            app:destination="@id/homepageFragment" />
+        <action
+            android:id="@+id/action_moodFragment_to_moodTracker"
+            app:destination="@id/moodTracker" />
+    </fragment>
+    <fragment
+        android:id="@+id/moodTracker"
+        android:name="com.example.sherapy.activities.MoodTracker"
+        android:label="activity_mood_tracker"
+        tools:layout="@layout/activity_mood_tracker" >
+        <action
+            android:id="@+id/action_moodTracker_to_moodFragment"
+            app:destination="@id/moodFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/afterPembayaran"
+        android:name="com.example.sherapy.fragments.AfterPembayaran"
+        android:label="AfterPembayaran"
+        tools:layout="@layout/konselsuccess">
+        <action
+            android:id="@+id/action_afterPembayaran_to_chatFragment"
+            app:destination="@id/chatFragment" />
+        <action
+            android:id="@+id/action_afterPembayaran_to_homepageFragment"
+            app:destination="@id/homepageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.example.sherapy.fragments.ChatFragment"
+        android:label="ChatFragment"
+        tools:layout="@layout/fragment_chat">
+        <action
+            android:id="@+id/action_chatFragment_to_afterPembayaran"
+            app:destination="@id/afterPembayaran" />
+    </fragment>
+    <fragment
+        android:id="@+id/notification"
+        android:name="com.example.sherapy.activities.Notification"
+        android:label="Notification"
+        tools:layout="@layout/activity_notifikasi">
+        <action
+            android:id="@+id/action_notification_to_bayarSuccessActivity"
+            app:destination="@id/bayarSuccessActivity" />
+        <action
+            android:id="@+id/action_notification_to_homepageFragment"
+            app:destination="@id/homepageFragment" />
+    </fragment>
+
+</navigation>

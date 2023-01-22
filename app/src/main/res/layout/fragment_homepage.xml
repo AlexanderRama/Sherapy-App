@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:id="@+id/frameLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/background2"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <FrameLayout
+            android:id="@+id/frameLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="700dp"
+            android:layout_marginTop="55dp"
+            android:background="@drawable/background"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/imageProfile"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="28dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/profile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/frameLayout2"
+            app:riv_corner_radius="@dimen/_8sdp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="@dimen/_160sdp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="88dp"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageProfile"
+            app:layout_constraintTop_toTopOf="@+id/frameLayout2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_marginEnd="8dp"
+                    android:ellipsize="end"
+                    android:gravity="left"
+                    android:maxLines="1"
+                    android:text="Halo, "
+                    android:textColor="#111111"
+                    android:textSize="@dimen/_20sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-8dp"
+                    android:textColor="#111111"
+                    android:textSize="@dimen/_20sdp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_marginEnd="8dp"
+                android:gravity="left"
+                android:text="Welcome Back!"
+                android:textColor="#111111"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageNotification"
+            android:layout_width="@dimen/_33sdp"
+            android:layout_height="@dimen/_33sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="42dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/background_icon"
+            android:padding="@dimen/_6sdp"
+            android:src="@drawable/ic_notifications"
+            android:tint="#111111"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/frameLayout2" />
+
+        <!--    Body-->
+
+        <!--    LOGOUT-->
+        <!--    <androidx.appcompat.widget.AppCompatImageView-->
+        <!--        android:id="@+id/imageSignOut"-->
+        <!--        android:layout_width="@dimen/_40sdp"-->
+        <!--        android:layout_height="@dimen/_40sdp"-->
+        <!--        android:layout_gravity="center"-->
+        <!--        android:background="@drawable/background_icon"-->
+        <!--        android:padding="@dimen/_6sdp"-->
+        <!--        android:src="@drawable/ic_logout"-->
+        <!--        android:tint="#111111" />-->
+
+        <!--    Footer-->
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="112dp"
+            android:background="@drawable/card"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/frameLayout2">
+
+            <LinearLayout
+                android:layout_width="340dp"
+                android:layout_height="135dp"
+                android:background="@drawable/card"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="168dp"
+                    android:fontFamily="@font/interbold"
+                    android:gravity="start"
+                    android:text="Discover Yourself"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="168dp"
+                    android:fontFamily="@font/intermedium"
+                    android:gravity="start"
+                    android:text="Let’s know more about yourself for a better you. Detect your inner health right now!"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/appointment1"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="230dp"
+                    android:layout_marginTop="-12dp"
+                    android:background="@drawable/buttoncard"
+                    android:fontFamily="@font/lexendbold"
+                    android:text="Discover"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout6"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+            <LinearLayout
+                android:layout_width="340dp"
+                android:layout_height="105dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="68dp"
+                    android:layout_marginEnd="168dp"
+                    android:fontFamily="@font/intersemibold"
+                    android:gravity="start"
+                    android:text="How are you feeling?"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="340dp"
+                    android:layout_height="135dp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:layout_width="@dimen/_42ssp"
+                        android:layout_height="@dimen/_42ssp"
+                        android:layout_marginStart="22dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/nangis" />
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:layout_width="@dimen/_42ssp"
+                        android:layout_height="@dimen/_42ssp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/sad" />
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:layout_width="@dimen/_42ssp"
+                        android:layout_height="@dimen/_42ssp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/datar" />
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:layout_width="@dimen/_42ssp"
+                        android:layout_height="@dimen/_42ssp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/happy" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/interbold"
+            android:text="Information and Education"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout6" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="340dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="40dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="@+id/frameLayout2"
+            app:layout_constraintTop_toBottomOf="@+id/textView25">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/intersemibold"
+                android:text="Popular Article"
+                android:textColor="@color/black"/>
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/showmore"
+                android:layout_width="@dimen/_9ssp"
+                android:layout_height="@dimen/_12ssp"
+                android:layout_marginStart="215dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/showmore" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background"
+            app:layout_constraintStart_toStartOf="@+id/frameLayout2"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_berita2"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_news" />
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

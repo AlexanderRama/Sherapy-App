@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "31058852743",
+    "project_id": "sherapy-e2efa",
+    "storage_bucket": "sherapy-e2efa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:31058852743:android:d30964333481f6d8897122",
+        "android_client_info": {
+          "package_name": "com.example.sherapy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "31058852743-pp5q1uhgafp6mnku2e2fnd1fdcm9ub0f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxxLoKolLF3tt8kJCrv3kuBs5dO157ROA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "31058852743-pp5q1uhgafp6mnku2e2fnd1fdcm9ub0f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

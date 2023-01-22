@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:scrollbars="none">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/background2"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:layout_marginTop="95dp"
+        android:background="@drawable/background"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/interbold"
+        android:text="Counseling"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="24dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/card1"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/frameLayout2">
+
+        <LinearLayout
+            android:layout_width="340dp"
+            android:layout_height="120dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/card"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="168dp"
+                android:fontFamily="@font/interbold"
+                android:gravity="start"
+                android:text="Ingin konseling berkala lebih murah dan aman?"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/lexendbold"
+                android:textColor="@color/black"
+                android:text="Sign Me!"
+                android:textAllCaps="false"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="123dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="210dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/add" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="142dp"
+        android:fontFamily="@font/interbold"
+        android:gravity="start"
+        android:text="Available Counselor"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card1" />
+
+    <Button
+        android:layout_width="85dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="22dp"
+        android:background="@android:color/transparent"
+        android:text="Price"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:fontFamily="@font/intersemibold"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/card1" />
+
+    <Button
+        android:layout_width="95dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="22dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/intersemibold"
+        android:text="Rating"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/card1" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/card"
+        app:layout_constraintTop_toBottomOf="@id/card1">
+
+        <LinearLayout
+            android:layout_width="340dp"
+            android:layout_height="140dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/card"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="115dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="168dp"
+                android:fontFamily="@font/interbold"
+                android:gravity="start"
+                android:text="@string/namakonselor"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="115dp"
+                android:layout_marginEnd="168dp"
+                android:fontFamily="@font/interbold"
+                android:gravity="start"
+                android:text="@string/konselor"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="145dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="168dp"
+                android:fontFamily="@font/interbold"
+                android:gravity="start"
+                android:text="@string/harga"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="12dp"
+                android:background="@drawable/review"
+                android:layout_marginStart="117dp"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="118dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="168dp"
+                android:fontFamily="@font/interbold"
+                android:gravity="start"
+                android:text="(24 Reviews)"
+                android:textColor="@color/black"
+                android:textSize="9sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/appointment1"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-25dp"
+                android:background="@drawable/buttoncard"
+                android:fontFamily="@font/lexendbold"
+                android:text="Appointment"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="85dp"
+            android:layout_height="102dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/konselor"/>
+
+        <ImageView
+            android:layout_width="21dp"
+            android:layout_height="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="115dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="195dp"
+            android:background="@drawable/money" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2">
+
+        <LinearLayout
+            android:layout_width="340dp"
+            android:layout_height="140dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/card"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="115dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="168dp"
+                android:fontFamily="@font/interbold"
+                android:gravity="start"
+                android:text="@string/namakonselor"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="115dp"
+                android:layout_marginEnd="168dp"
+                android:fontFamily="@font/interbold"
+                android:gravity="start"
+                android:text="@string/konselor"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="145dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="168dp"
+                android:fontFamily="@font/interbold"
+                android:gravity="start"
+                android:text="@string/harga"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="12dp"
+                android:background="@drawable/review"
+                android:layout_marginStart="117dp"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="118dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="168dp"
+                android:fontFamily="@font/interbold"
+                android:gravity="start"
+                android:text="(24 Reviews)"
+                android:textColor="@color/black"
+                android:textSize="9sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/appointment3"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-25dp"
+                android:background="@drawable/buttoncard"
+                android:fontFamily="@font/lexendbold"
+                android:text="Appointment"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="85dp"
+            android:layout_height="102dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/konselor"/>
+
+        <ImageView
+            android:layout_width="21dp"
+            android:layout_height="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="115dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="195dp"
+            android:background="@drawable/money" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+        <LinearLayout
+            android:layout_width="340dp"
+            android:layout_height="140dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/card"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="115dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="168dp"
+                android:fontFamily="@font/interbold"
+                android:gravity="start"
+                android:text="@string/namakonselor2"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="115dp"
+                android:layout_marginEnd="168dp"
+                android:fontFamily="@font/interbold"
+                android:gravity="start"
+                android:text="@string/konselor"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="145dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="168dp"
+                android:fontFamily="@font/interbold"
+                android:gravity="start"
+                android:text="@string/harga"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="12dp"
+                android:background="@drawable/review"
+                android:layout_marginStart="117dp"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="118dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="168dp"
+                android:fontFamily="@font/interbold"
+                android:gravity="start"
+                android:text="(24 Reviews)"
+                android:textColor="@color/black"
+                android:textSize="9sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/appointment2"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-25dp"
+                android:background="@drawable/buttoncard"
+                android:fontFamily="@font/lexendbold"
+                android:text="Appointment"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="85dp"
+            android:layout_height="102dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/konselor2"/>
+
+        <ImageView
+            android:layout_width="21dp"
+            android:layout_height="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="115dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="195dp"
+            android:background="@drawable/money" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

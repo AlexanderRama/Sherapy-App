@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homepageFragment"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/moodFragment"
+        android:icon="@drawable/ic_health"
+        android:title="Mood" />
+
+    <item
+        android:id="@+id/fragment1Fragment"
+        android:icon="@drawable/ic_logo"
+        android:title="Sherapy" />
+
+    <item
+        android:id="@+id/konselingFragment"
+        android:icon="@drawable/ic_chat"
+        android:title="Counseling" />
+
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_personal"
+        android:title="Profile"/>
+
+
+</menu>

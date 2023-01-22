@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/frameLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/background2"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:layout_marginTop="95dp"
+        android:background="@drawable/background"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/interbold"
+        android:text="Deteksi Dini"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="24dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="330dp"
+        android:layout_height="14dp"
+        android:layout_marginTop="42dp"
+        android:progressDrawable="@drawable/grafikquiz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout2"
+        tools:targetApi="p" />
+
+    <LinearLayout
+        android:layout_width="338dp"
+        android:layout_height="510dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/bggg"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/questions"
+            android:layout_width="285dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/intermedium"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis eu fugiat nulla pariatur."
+            android:textColor="#464647"
+            android:textSize="21sp"
+            app:layout_constraintVertical_bias="0.222" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/option1"
+            android:layout_width="285dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/btndeteksi"
+            android:text="Tidak Pernah"
+            android:textAlignment="textStart"
+            android:fontFamily="@font/intermedium"
+            android:textSize="18sp"
+            android:drawablePadding="8dp"
+            android:paddingStart="15dp"
+            android:drawableStart="@drawable/ic_baseline_circle_24"
+            android:textAllCaps="false"
+            android:textColor="#E1A5F2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/option2"
+            android:layout_width="285dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btndeteksi"
+            android:fontFamily="@font/intermedium"
+            android:textSize="18sp"
+            android:text="Kurang dari biasanya"
+            android:drawablePadding="8dp"
+            android:paddingStart="15dp"
+            android:drawableStart="@drawable/ic_baseline_circle_24"
+            android:textAllCaps="false"
+            android:textAlignment="textStart"
+            android:textColor="#E1A5F2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/option3"
+            android:layout_width="285dp"
+            android:textAlignment="textStart"
+            android:layout_height="58dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btndeteksi"
+            android:text="Sama seperti biasanya"
+            android:drawablePadding="8dp"
+            android:paddingStart="15dp"
+            android:drawableStart="@drawable/ic_baseline_circle_24"
+            android:textSize="18sp"
+            android:fontFamily="@font/intermedium"
+            android:textAllCaps="false"
+            android:textColor="#E1A5F2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/option4"
+            android:textAlignment="textStart"
+            android:layout_width="285dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btndeteksi"
+            android:textSize="18sp"
+            android:fontFamily="@font/intermedium"
+            android:text="Lebih dari biasanya"
+            android:drawablePadding="8dp"
+            android:paddingStart="15dp"
+            android:drawableStart="@drawable/ic_baseline_circle_24"
+            android:textAllCaps="false"
+            android:textColor="#E1A5F2" />
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/countdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/lexendmedium"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/soal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/lexendmedium"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/lexendmedium"
+                android:text="  / 20"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
